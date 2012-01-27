@@ -16,8 +16,7 @@
    Created by : GNU Emacs 23.2.3
  */
 
-class LIB_REQUEST
-{
+class LIB_REQUEST implements IteratorAggregate {
     public $cookieExpired = '';
     public $defaultRequest ;
 
@@ -83,7 +82,12 @@ class LIB_REQUEST
         if ('cookie' == $req)
             return $_COOKIE;
         
-        return null;
+        return array();
+    }
+
+    /* for iterate, optional you can use allRequest() */
+    public function  getIterator () {
+        return new ArrayIterator ($this->allRequest ($this->defaultRequest));
     }
 
 }
