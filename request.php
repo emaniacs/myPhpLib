@@ -1,6 +1,6 @@
 <?php
 /* 
-   (f) REQUEST.php
+   (f) request.php
    (i) library for handle for POST, GET and COOKIE
    (c) 2011, emaniacs
    (s) chars19.blogspot.com
