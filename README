@@ -1,0 +1,19 @@
+My PHP collection library.
+
+-- db.php   (database handler).
+-+ db
+ |-- api.SIMPLE.php (simple query building).
+ |-+ sqlite
+   |-- SQLITE.php (driver for sqlite connection).
+   |-- utility.SQLITE.php (utility for sqlite).
+ |-+ mysql
+   |-- MYSQL.php (driver for mysql connection).
+   |-- utility.MYSQL.php (utility for mysql).
+ |-+ pgsql
+   |-- PGSQL.php (driver for postgresql connection).
+   |-- utility.PGSQL.php (utility for postgresql).
+-- html.php (html builder).
+-- request.php (request handler).
+-- session.php (session handler).
+-- table.php (html table builder).
+-- upload.php (upload library).
