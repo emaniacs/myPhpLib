@@ -71,6 +71,11 @@ class LIB_REQUEST implements IteratorAggregate {
         return setcookie ($name, $val, $this->cookieExpired);
     }
 
+    /* delete cookie */
+    public function  delCookie ($name) {
+        return setcookie ($name, '', time() - 3600);
+    }
+
     /* return all request variable. */
     public function  allRequest ($req='post') {
         if ('post' == $req)
